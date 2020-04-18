@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: #404040;
+  line-height: 2;
+  font-family: dnp-shuei-gothic-kin-std, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+.logo{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.global-nav{
+  margin-top: 10px;
+  display: flex;
+}
+
+.global-nav li{
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.global-nav li a{
+  color: #707070;
+}
+.global-nav li a.shinkan:hover{
+  color: #e58f0e;
+  text-decoration: none;
+}
+.global-nav li a.jusapo:hover{
+  color: #af0c74;
+  text-decoration: none;
+}
+.global-nav li a.tenpo:hover{
+  color: #d22020;
+  text-decoration: none;
+}
+.global-nav li a.bee:hover{
+  color: #efdc1c;
+  text-decoration: none;
+}
+.global-nav li a.seikatsu:hover{
+  color: #12ac5f;
+  text-decoration: none;
+}
+.global-nav li a.koho:hover{
+  color: #1f92cc;
+  text-decoration: none;
+}
+.global-nav li a.zentai:hover{
+  color: #7b56dc;
+  text-decoration: none;
+}
+
+#wrap{
+  clear: both;
+}
+
+.content{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 100%;
+}
+.slider img{
+  width: 100%;
+  height: auto;
+}
+
+.slick-slide:not(.slick-center) {
+  -webkit-filter: opacity(70%);
+  -moz-filter: opacity(70%);
+  -o-filter: opacity(70%);
+  -ms-filter: opacity(70%);
+  filter: opacity(70%);
+  transition: 0.2s linear;
+}
+
+.main{
+  width: 600px;
+  margin: 0 10px 0 200px;
+  float: left;
+}
+
+#newevent{
+  display: flex;
+}
+#newevent li{
+  margin: 0;
+  list-style: none;
+}
+
+#newevent li:first-child{
+  margin-right: 2px;
+}
+
+.news{
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+.news th,.news td{
+  padding: 15px 0;
+  border-bottom: 1px dotted #707070;
+}
+
+.sidebar{
+  width: 300px;
+  margin: 0 100px 0 20px;
+  float: right;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+a img:hover{
+  opacity: 0.8;
+}
+
+.continue {
+  font-size: 14px;
+  color: #707070;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.continue::after {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  margin: 0 0.2em 0.1em;
+  content: '';
+  border-right: 0.14em solid #e64800;
+  border-bottom: 0.14em solid #e64800;
+  transform: rotate(-45deg);
+}
+
+.continue:hover {
+  opacity: 0.6;
+}
+
+.content h2{
+  color: #fff;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.content h2::before{
+  content: url(../img/puzzle.svg);
+  margin-right: 10px;
+}
+
+.link li{
+  margin-top: 10px;
+  text-align: center;
+}
+.index_pink{
+  display: block;
+  background-color: #ec7077;
+}
+
+.index_orange{
+  display: block;
+  background-color: #f38313;
+}
+
+.index_gray{
+  display: block;
+  background-color: #d0d0d0;
+}
+
+.index_blue{
+  display: block;
+  background-color: #1f92cc;
+}
+
+section{
+  margin-bottom: 10px;
+}
+
+footer{
+  text-align: center;
+  color: #fff;
+  background-color: #313131;
+  padding: 20px 0;
+  clear: both;
+}
+
+footer small{
+  font-size: 12px;
+}
