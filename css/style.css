@@ -1,35 +1,35 @@
-body{
+body {
   margin: 0;
   padding: 0;
   color: #404040;
   line-height: 2;
   font-family: dnp-shuei-gothic-kin-std, sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p,h1,h2,h3,h4,h5,h6{
+p,h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -42,121 +42,129 @@ header{
   justify-content: space-between;
   background: #fff;
 }
-.logo{
+.logo {
   margin-top: 5px;
   margin-left: 5px;
 }
 
-.global-nav{
+.global-nav {
   margin-top: 10px;
   display: flex;
 }
 
-.global-nav li{
+.global-nav li {
   margin: 0 20px;
   font-size: 20px;
   list-style: none;
 }
 
-.global-nav li a{
+.global-nav li a {
   color: #707070;
 }
-.global-nav li a.shinkan:hover{
+.global-nav li a.shinkan:hover {
   color: #e58f0e;
   text-decoration: none;
+  border-bottom: 1px solid #e58f0e;
 }
-.global-nav li a.jusapo:hover{
+.global-nav li a.jusapo:hover {
   color: #af0c74;
   text-decoration: none;
+  border-bottom: 1px solid #af0c74;
 }
-.global-nav li a.tenpo:hover{
+.global-nav li a.tenpo:hover {
   color: #d22020;
   text-decoration: none;
+  border-bottom: 1px solid #d22020;
 }
-.global-nav li a.bee:hover{
+.global-nav li a.bee:hover {
   color: #efdc1c;
   text-decoration: none;
+  border-bottom: 1px solid #efdc1c;
 }
-.global-nav li a.seikatsu:hover{
+.global-nav li a.seikatsu:hover {
   color: #12ac5f;
   text-decoration: none;
+  border-bottom: 1px solid #12ac5f;
 }
-.global-nav li a.koho:hover{
+.global-nav li a.koho:hover {
   color: #1f92cc;
   text-decoration: none;
+  border-bottom: 1px solid #1f92cc;
 }
-.global-nav li a.zentai:hover{
+.global-nav li a.zentai:hover {
   color: #7b56dc;
   text-decoration: none;
+  border-bottom: 1px solid #7b56dc;
 }
 
-#wrap{
+#wrap {
   clear: both;
 }
 
-.content{
+.album {
   width: 100%;
   margin: 0 auto;
   padding-top: 70px;
 }
 
-.slider{
+.slider {
   margin: 0 auto;
-  width: 100%;
 }
-.slider img{
+.slider img {
   width: 100%;
   height: auto;
 }
 
 .slick-slide:not(.slick-center) {
-  -webkit-filter: opacity(70%);
+  /*   -webkit-filter: opacity(70%);
   -moz-filter: opacity(70%);
   -o-filter: opacity(70%);
-  -ms-filter: opacity(70%);
+  -ms-filter: opacity(70%); */
   filter: opacity(70%);
   transition: 0.2s linear;
 }
 
-.main{
-  width: 600px;
-  margin: 0 10px 0 200px;
-  float: left;
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  width: calc(100%-300px);
+  margin-right: 10px;
+  /*   float: left; */
 }
 
-#newevent{
+#newevent {
   display: flex;
 }
-#newevent li{
-  margin: 0;
+#newevent li {
+  margin: 0 auto;
   list-style: none;
 }
 
-#newevent li:first-child{
-  margin-right: 2px;
-}
-
-.news{
+.news {
   width: 80%;
   margin: 0 auto;
   border-spacing: 0;
 }
-.news th,.news td{
+.news th,.news td {
   padding: 15px 0;
   border-bottom: 1px dotted #707070;
 }
 
-.sidebar{
+.sidebar {
   width: 300px;
-  margin: 0 100px 0 20px;
-  float: right;
+  margin: 0 auto;
+  /*   float: right; */
 }
 
 .sidebar li {
   list-style: none;
 }
 
-a img:hover{
+.content a img:hover {
   opacity: 0.8;
 }
 
@@ -174,7 +182,7 @@ a img:hover{
   width: 0.4em;
   height: 0.4em;
   margin: 0 0.2em 0.1em;
-  content: '';
+  content: "";
   border-right: 0.14em solid #e64800;
   border-bottom: 0.14em solid #e64800;
   transform: rotate(-45deg);
@@ -184,53 +192,53 @@ a img:hover{
   opacity: 0.6;
 }
 
-.content h2{
+.content h2 {
   color: #fff;
   padding-left: 10px;
   line-height: 1.5;
 }
 
-.content h2::before{
+.content h2::before {
   content: url(../img/puzzle.svg);
   margin-right: 10px;
 }
 
-.link li{
+.link li {
   margin-top: 10px;
   text-align: center;
 }
-.index_pink{
+.index_pink {
   display: block;
   background-color: #ec7077;
 }
 
-.index_orange{
+.index_orange {
   display: block;
   background-color: #f38313;
 }
 
-.index_gray{
+.index_gray {
   display: block;
-  background-color: #d0d0d0;
+  background-color: #707070;
 }
 
-.index_blue{
+.index_blue {
   display: block;
   background-color: #1f92cc;
 }
 
-section{
+section {
   margin-bottom: 10px;
 }
 
-footer{
+footer {
   text-align: center;
   color: #fff;
   background-color: #313131;
+  width: 100%;
   padding: 20px 0;
-  clear: both;
 }
 
-footer small{
+footer small {
   font-size: 12px;
 }
